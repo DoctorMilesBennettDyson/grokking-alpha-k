@@ -90,7 +90,10 @@ Master table (mean sustained t_grok; full per-run tables incl. outliers/DNFs in
 | 113 | 31,767 | 6,800 | 2,933 | 1,067 | 500 |
 | 149 | 13,233 | 5,767 | 2,333 | 833 | 617 [6/8] |
 
-Log–log slope of t_grok vs wd per modulus:
+The full grid is shown as a heatmap in **Figure 2** (`figures/fig2_master_heatmap.png`):
+t_grok spans 471 to ~198,000 steps and falls smoothly along both axes.
+
+Log–log slope of t_grok vs wd per modulus (**Figure 1**, `figures/fig1_alpha_vs_K.png`):
 
 | p | K | α |
 |---|---|---|
@@ -143,7 +146,9 @@ Criterion: at depth-2 (p=97), slope ∈ [-0.94, -0.54]. Observed: **-0.658** ove
 three wd cells that generalize (wd ≥ 1.0: 0/3 reach criterion). But in every clean
 depth-2 run, train and test accuracy rise *together* — `t_train_saturated == t_grok`
 in all cells — because with 250K training examples and 423K parameters, memorization is
-impossible. **There is no grokking at depth-2**; the wd power law survives in a regime
+impossible. **Figure 3** contrasts the two regimes directly: a canonical grokking gap at
+depth-1 (train saturates ~300 steps, test generalizes ~25,000 steps later) beside the
+depth-2 curve where train and test are indistinguishable throughout. **There is no grokking at depth-2**; the wd power law survives in a regime
 of ordinary generalization. We report this as a boundary of the grokking regime (the
 memorization phase requires K small relative to capacity), and explicitly *not* as
 "grokking is composition-invariant".
@@ -156,7 +161,9 @@ first doubling (+23%) and failed for the second (+12%). The direction matters mo
 the magnitudes: if minibatch noise limited *signal* (a gradient-SNR reading), larger
 batches should grok *faster*. They grok slower. Minibatch noise **accelerates** grokking,
 consistent with noise-as-exploration accounts of the memorization-to-generalization
-transition.
+transition. **Figure 4** shows the batch-size effect (left) and the SGD weight-collapse
+mechanism (right: AdamW train loss crashes to zero while SGD stays pinned at the
+uniform-distribution value ln(99)).
 
 ## 5. Theory: status and method
 

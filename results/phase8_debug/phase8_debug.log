@@ -1,0 +1,23 @@
+[2026-07-06 01:20:07] ============================================================
+[2026-07-06 01:20:07] PHASE 8 DEBUG START
+[2026-07-06 01:20:07]   total: 6  done: 0  pending: 6
+[2026-07-06 01:20:07] ============================================================
+[2026-07-06 01:20:07] Device: cuda
+[2026-07-06 01:20:07] --- [1/6] debugB3_sgd_wd1.0_baseline ---
+[2026-07-06 01:20:07]     Hypothesis: SGD-momentum funciona en absoluto con wd=1.0 baseline
+[2026-07-06 01:29:53]     SANITY CHECK B3 verdict: SGD baseline FAILED
+[2026-07-06 01:29:53]     done 586s | t_grok=None | acc=0.0079
+[2026-07-06 01:29:53] --- [2/6] debugA2_depth2_wd0.3 ---
+[2026-07-06 01:29:53]     Hypothesis: depth=2 con wd menor (0.3) sí grokkea
+[2026-07-06 01:58:08]     done 1695s | t_grok=None | acc=0.4655
+[2026-07-06 01:58:08] --- [3/6] debugA3_depth2_wd1.0_4layers ---
+[2026-07-06 01:58:08]     Hypothesis: depth=2 wd=1.0 con n_layers=4 (más capacidad) sí grokkea
+[2026-07-06 08:55:51]     done 25062s | t_grok=None | acc=0.2532
+[2026-07-06 08:55:51] --- [4/6] debugA1_depth2_wd1.0_long ---
+[2026-07-06 08:55:51]     Hypothesis: depth=2 wd=1.0 simplemente necesita 300K steps (no 200K)
+[2026-07-06 10:21:33]     done 5143s | t_grok=None | acc=0.1410
+[2026-07-06 10:21:33] SKIPPING debugB1_sgd_wd0.01_lr3e-3: SGD baseline (B3) did not grokkea, so SGD path is broken. Diagnostic complete for B-runs.
+[2026-07-06 10:21:33] SKIPPING debugB2_sgd_wd0.01_warmup2000: SGD baseline (B3) did not grokkea, so SGD path is broken. Diagnostic complete for B-runs.
+[2026-07-06 10:21:33] PHASE 8 DEBUG COMPLETE
+[2026-07-06 10:21:33] REPORT written: e:\ASIC_LLM_Project\paper_04_emergence_prediction\code\grokking\results\phase8_debug\REPORT.md
+[2026-07-06 10:21:33] Phase 8 DEBUG done.

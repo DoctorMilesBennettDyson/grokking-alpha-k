@@ -1,0 +1,116 @@
+[2026-04-28 21:58:43] ============================================================
+[2026-04-28 21:58:43] PHASE 8 (FASE II) START
+[2026-04-28 21:58:43]   total: 46  done: 0  pending: 46
+[2026-04-28 21:58:43]     H1: 15 runs
+[2026-04-28 21:58:43]     H2: 15 runs
+[2026-04-28 21:58:43]     H3: 10 runs
+[2026-04-28 21:58:43]     H4: 6 runs
+[2026-04-28 21:58:43]   estimated time remaining: ~8.9h
+[2026-04-28 21:58:43] ============================================================
+[2026-04-28 21:58:43] Device: cuda
+[2026-04-28 21:58:43] --- [1/46] H1_depth2_wd0.01_s0 (H1) ---
+[2026-04-28 22:56:13]     done 3450s | t_grok=11100 | sustained=13100 | acc=1.0000 | diverged=False
+[2026-04-28 22:56:13] --- [2/46] H1_depth2_wd0.01_s1 (H1) ---
+[2026-04-28 23:55:30]     done 3557s | t_grok=7800 | sustained=20800 | acc=0.9844 | diverged=False
+[2026-04-28 23:55:30] --- [3/46] H1_depth2_wd0.01_s2 (H1) ---
+[2026-04-29 00:54:05]     done 3515s | t_grok=11500 | sustained=17700 | acc=0.9971 | diverged=False
+[2026-04-29 00:54:05] --- [4/46] H1_depth2_wd0.1_s0 (H1) ---
+[2026-04-29 01:51:35]     done 3449s | t_grok=3500 | sustained=3500 | acc=0.9994 | diverged=False
+[2026-04-29 01:51:35] --- [5/46] H1_depth2_wd0.1_s1 (H1) ---
+[2026-04-29 02:48:56]     done 3442s | t_grok=65500 | sustained=None | acc=0.9314 | diverged=False
+[2026-04-29 02:48:56] --- [6/46] H1_depth2_wd0.1_s2 (H1) ---
+[2026-04-29 03:46:23]     done 3447s | t_grok=2800 | sustained=3100 | acc=0.9970 | diverged=False
+[2026-04-29 03:46:23] --- [7/46] H1_depth2_wd0.3_s0 (H1) ---
+[2026-04-29 06:59:27]     done 11584s | t_grok=None | sustained=None | acc=0.6957 | diverged=False
+[2026-04-29 06:59:27] --- [8/46] H1_depth2_wd0.3_s1 (H1) ---
+[2026-04-29 07:57:06]     done 3459s | t_grok=None | sustained=None | acc=0.6173 | diverged=False
+[2026-04-29 07:57:06] --- [9/46] H1_depth2_wd0.3_s2 (H1) ---
+[2026-04-29 08:54:50]     done 3463s | t_grok=1900 | sustained=1900 | acc=0.9962 | diverged=False
+[2026-04-29 08:54:50] --- [10/46] H1_depth2_wd1.0_s0 (H1) ---
+[2026-04-29 15:42:59]     done 24490s | t_grok=None | sustained=None | acc=0.3097 | diverged=False
+[2026-04-29 15:42:59] --- [11/46] H1_depth2_wd1.0_s1 (H1) ---
+[2026-04-29 17:37:51]     done 6891s | t_grok=None | sustained=None | acc=0.2576 | diverged=False
+[2026-04-29 17:37:51] --- [12/46] H1_depth2_wd1.0_s2 (H1) ---
+[2026-04-29 18:34:47]     done 3417s | t_grok=None | sustained=None | acc=0.1503 | diverged=False
+[2026-04-29 18:34:47] --- [13/46] H1_depth2_wd3.0_s0 (H1) ---
+[2026-04-29 19:32:05]     done 3438s | t_grok=None | sustained=None | acc=0.0101 | diverged=False
+[2026-04-29 19:32:05] --- [14/46] H1_depth2_wd3.0_s1 (H1) ---
+[2026-04-29 20:30:00]     done 3475s | t_grok=None | sustained=None | acc=0.0103 | diverged=False
+[2026-04-29 20:30:00] --- [15/46] H1_depth2_wd3.0_s2 (H1) ---
+[2026-04-29 21:28:28]     done 3508s | t_grok=None | sustained=None | acc=0.0102 | diverged=False
+[2026-04-29 21:28:28] --- [16/46] H2_sgd_wd0.01_s0 (H2) ---
+[2026-04-29 21:48:42]     done 1214s | t_grok=None | sustained=None | acc=0.0085 | diverged=False
+[2026-04-29 21:48:42] --- [17/46] H2_sgd_wd0.01_s1 (H2) ---
+[2026-04-29 22:09:12]     done 1230s | t_grok=None | sustained=None | acc=0.0081 | diverged=False
+[2026-04-29 22:09:12] --- [18/46] H2_sgd_wd0.01_s2 (H2) ---
+[2026-04-30 04:17:34]     done 22102s | t_grok=None | sustained=None | acc=0.0077 | diverged=False
+[2026-04-30 04:17:34] --- [19/46] H2_sgd_wd0.1_s0 (H2) ---
+[2026-04-30 04:37:42]     done 1207s | t_grok=None | sustained=None | acc=0.0085 | diverged=False
+[2026-04-30 04:37:42] --- [20/46] H2_sgd_wd0.1_s1 (H2) ---
+[2026-07-06 14:49:48] ============================================================
+[2026-07-06 14:49:48] PHASE 8 (FASE II) START
+[2026-07-06 14:49:48]   total: 46  done: 19  pending: 27
+[2026-07-06 14:49:48]     H1: 15 runs
+[2026-07-06 14:49:48]     H2: 15 runs
+[2026-07-06 14:49:48]     H3: 10 runs
+[2026-07-06 14:49:48]     H4: 6 runs
+[2026-07-06 14:49:48]   estimated time remaining: ~5.2h
+[2026-07-06 14:49:48] ============================================================
+[2026-07-06 14:49:48] Device: cuda
+[2026-07-06 14:49:48] --- [20/46] H2_sgd_wd0.1_s1 (H2) ---
+[2026-07-06 15:07:43]     done 1075s | t_grok=None | sustained=None | acc=0.0081 | diverged=False
+[2026-07-06 15:07:43] --- [21/46] H2_sgd_wd0.1_s2 (H2) ---
+[2026-07-06 15:25:44]     done 1080s | t_grok=None | sustained=None | acc=0.0077 | diverged=False
+[2026-07-06 15:25:44] --- [22/46] H2_sgd_wd0.3_s0 (H2) ---
+[2026-07-06 15:44:10]     done 1107s | t_grok=None | sustained=None | acc=0.0085 | diverged=False
+[2026-07-06 15:44:10] --- [23/46] H2_sgd_wd0.3_s1 (H2) ---
+[2026-07-06 16:01:59]     done 1069s | t_grok=None | sustained=None | acc=0.0081 | diverged=False
+[2026-07-06 16:01:59] --- [24/46] H2_sgd_wd0.3_s2 (H2) ---
+[2026-07-06 16:19:44]     done 1065s | t_grok=None | sustained=None | acc=0.0077 | diverged=False
+[2026-07-06 16:19:44] --- [25/46] H2_sgd_wd1.0_s0 (H2) ---
+[2026-07-06 16:37:32]     done 1068s | t_grok=None | sustained=None | acc=0.0085 | diverged=False
+[2026-07-06 16:37:32] --- [26/46] H2_sgd_wd1.0_s1 (H2) ---
+[2026-07-06 17:08:27]     done 1855s | t_grok=None | sustained=None | acc=0.0081 | diverged=False
+[2026-07-06 17:08:27] --- [27/46] H2_sgd_wd1.0_s2 (H2) ---
+[2026-07-06 17:26:01]     done 1054s | t_grok=None | sustained=None | acc=0.0091 | diverged=False
+[2026-07-06 17:26:01] --- [28/46] H2_sgd_wd3.0_s0 (H2) ---
+[2026-07-06 17:43:32]     done 1052s | t_grok=None | sustained=None | acc=0.0085 | diverged=False
+[2026-07-06 17:43:32] --- [29/46] H2_sgd_wd3.0_s1 (H2) ---
+[2026-07-06 18:00:59]     done 1046s | t_grok=None | sustained=None | acc=0.0100 | diverged=False
+[2026-07-06 18:00:59] --- [30/46] H2_sgd_wd3.0_s2 (H2) ---
+[2026-07-06 18:44:32]     done 2613s | t_grok=None | sustained=None | acc=0.0087 | diverged=False
+[2026-07-06 18:44:32] --- [31/46] H3_initxavier_s20 (H3) ---
+[2026-07-06 19:03:15]     done 1123s | t_grok=1200 | sustained=1200 | acc=1.0000 | diverged=False
+[2026-07-06 19:03:15] --- [32/46] H3_initxavier_s21 (H3) ---
+[2026-07-06 19:21:53]     done 1119s | t_grok=1200 | sustained=1200 | acc=1.0000 | diverged=False
+[2026-07-06 19:21:53] --- [33/46] H3_initxavier_s22 (H3) ---
+[2026-07-06 19:57:47]     done 2153s | t_grok=1400 | sustained=1400 | acc=1.0000 | diverged=False
+[2026-07-06 19:57:47] --- [34/46] H3_initxavier_s23 (H3) ---
+[2026-07-06 20:17:32]     done 1186s | t_grok=1300 | sustained=1300 | acc=1.0000 | diverged=False
+[2026-07-06 20:17:33] --- [35/46] H3_initxavier_s24 (H3) ---
+[2026-07-06 20:37:15]     done 1182s | t_grok=1300 | sustained=1300 | acc=1.0000 | diverged=False
+[2026-07-06 20:37:15] --- [36/46] H3_initkaiming_s20 (H3) ---
+[2026-07-06 20:56:20]     done 1145s | t_grok=1300 | sustained=1300 | acc=1.0000 | diverged=False
+[2026-07-06 20:56:20] --- [37/46] H3_initkaiming_s21 (H3) ---
+[2026-07-06 21:15:57]     done 1178s | t_grok=1600 | sustained=1800 | acc=1.0000 | diverged=False
+[2026-07-06 21:15:57] --- [38/46] H3_initkaiming_s22 (H3) ---
+[2026-07-06 21:36:00]     done 1202s | t_grok=1700 | sustained=1700 | acc=1.0000 | diverged=False
+[2026-07-06 21:36:00] --- [39/46] H3_initkaiming_s23 (H3) ---
+[2026-07-06 21:56:09]     done 1210s | t_grok=1500 | sustained=2000 | acc=1.0000 | diverged=False
+[2026-07-06 21:56:09] --- [40/46] H3_initkaiming_s24 (H3) ---
+[2026-07-06 22:15:59]     done 1190s | t_grok=1400 | sustained=1400 | acc=1.0000 | diverged=False
+[2026-07-06 22:15:59] --- [41/46] H4_bs256_s0 (H4) ---
+[2026-07-06 22:37:25]     done 1286s | t_grok=900 | sustained=900 | acc=1.0000 | diverged=False
+[2026-07-06 22:37:25] --- [42/46] H4_bs256_s1 (H4) ---
+[2026-07-06 22:58:12]     done 1246s | t_grok=1200 | sustained=1200 | acc=0.9998 | diverged=False
+[2026-07-06 22:58:12] --- [43/46] H4_bs256_s2 (H4) ---
+[2026-07-06 23:18:28]     done 1216s | t_grok=1100 | sustained=1100 | acc=1.0000 | diverged=False
+[2026-07-06 23:18:28] --- [44/46] H4_bs1024_s0 (H4) ---
+[2026-07-06 23:52:05]     done 2017s | t_grok=1400 | sustained=1400 | acc=0.9838 | diverged=False
+[2026-07-06 23:52:05] --- [45/46] H4_bs1024_s1 (H4) ---
+[2026-07-07 00:23:47]     done 1902s | t_grok=1500 | sustained=1500 | acc=0.9588 | diverged=False
+[2026-07-07 00:23:47] --- [46/46] H4_bs1024_s2 (H4) ---
+[2026-07-07 00:57:13]     done 2007s | t_grok=1500 | sustained=1500 | acc=1.0000 | diverged=False
+[2026-07-07 00:57:13] PHASE 8 RUNS COMPLETE
+[2026-07-07 00:57:13] REPORT written: e:\ASIC_LLM_Project\paper_04_emergence_prediction\code\grokking\results\phase8\REPORT.md
+[2026-07-07 00:57:13] Phase 8 (Fase II) done.

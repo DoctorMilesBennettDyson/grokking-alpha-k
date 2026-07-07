@@ -1,0 +1,62 @@
+[2026-04-26 00:01:25] ============================================================
+[2026-04-26 00:01:25] PHASE 5 STARTING
+[2026-04-26 00:01:25] ============================================================
+[2026-04-26 00:01:25] Total planned runs: 17
+[2026-04-26 00:01:25] Already complete (skipped): 0
+[2026-04-26 00:01:25] To execute: 17
+[2026-04-26 00:01:25] Output dir: E:\ASIC_LLM_Project\paper_04_emergence_prediction\code\grokking\results\phase5
+[2026-04-26 00:01:26] Device: cuda
+[2026-04-26 00:01:26] --- Run 1/17: rebaseline_s10 (group=rebaseline) ---
+[2026-04-26 00:01:26]     weight_decay=1.0, seed=10
+[2026-04-26 00:11:37]     DONE in 612s. t_grok=1600, final_test_acc=1.0000
+[2026-04-26 00:11:37] --- Run 2/17: rebaseline_s11 (group=rebaseline) ---
+[2026-04-26 00:11:37]     weight_decay=1.0, seed=11
+[2026-04-26 00:22:22]     DONE in 645s. t_grok=1400, final_test_acc=1.0000
+[2026-04-26 00:22:22] --- Run 3/17: rebaseline_s12 (group=rebaseline) ---
+[2026-04-26 00:22:22]     weight_decay=1.0, seed=12
+[2026-04-26 00:32:30]     DONE in 608s. t_grok=1400, final_test_acc=1.0000
+[2026-04-26 00:32:30] --- Run 4/17: rebaseline_s13 (group=rebaseline) ---
+[2026-04-26 00:32:30]     weight_decay=1.0, seed=13
+[2026-04-26 00:43:10]     DONE in 640s. t_grok=1200, final_test_acc=1.0000
+[2026-04-26 00:43:10] --- Run 5/17: rebaseline_s14 (group=rebaseline) ---
+[2026-04-26 00:43:10]     weight_decay=1.0, seed=14
+[2026-04-26 00:52:50]     DONE in 580s. t_grok=1000, final_test_acc=1.0000
+[2026-04-26 00:52:51] --- Run 6/17: wd0.01_s0 (group=wd_sweep) ---
+[2026-04-26 00:52:51]     weight_decay=0.01, seed=0
+[2026-04-26 01:02:36]     DONE in 586s. t_grok=32300, final_test_acc=0.9996
+[2026-04-26 01:02:36] --- Run 7/17: wd0.01_s1 (group=wd_sweep) ---
+[2026-04-26 01:02:36]     weight_decay=0.01, seed=1
+[2026-04-26 01:12:28]     DONE in 592s. t_grok=20800, final_test_acc=0.9979
+[2026-04-26 01:12:28] --- Run 8/17: wd0.01_s2 (group=wd_sweep) ---
+[2026-04-26 01:12:28]     weight_decay=0.01, seed=2
+[2026-04-26 01:22:01]     DONE in 572s. t_grok=35600, final_test_acc=1.0000
+[2026-04-26 01:22:01] --- Run 9/17: wd0.1_s0 (group=wd_sweep) ---
+[2026-04-26 01:22:01]     weight_decay=0.1, seed=0
+[2026-04-26 01:31:36]     DONE in 575s. t_grok=8900, final_test_acc=1.0000
+[2026-04-26 01:31:36] --- Run 10/17: wd0.1_s1 (group=wd_sweep) ---
+[2026-04-26 01:31:36]     weight_decay=0.1, seed=1
+[2026-04-26 01:41:02]     DONE in 566s. t_grok=7900, final_test_acc=1.0000
+[2026-04-26 01:41:02] --- Run 11/17: wd0.1_s2 (group=wd_sweep) ---
+[2026-04-26 01:41:02]     weight_decay=0.1, seed=2
+[2026-04-26 01:50:28]     DONE in 565s. t_grok=11000, final_test_acc=1.0000
+[2026-04-26 01:50:28] --- Run 12/17: wd0.3_s0 (group=wd_sweep) ---
+[2026-04-26 01:50:28]     weight_decay=0.3, seed=0
+[2026-04-26 01:59:46]     DONE in 559s. t_grok=4000, final_test_acc=1.0000
+[2026-04-26 01:59:46] --- Run 13/17: wd0.3_s1 (group=wd_sweep) ---
+[2026-04-26 01:59:46]     weight_decay=0.3, seed=1
+[2026-04-26 02:09:05]     DONE in 558s. t_grok=4200, final_test_acc=1.0000
+[2026-04-26 02:09:05] --- Run 14/17: wd0.3_s2 (group=wd_sweep) ---
+[2026-04-26 02:09:05]     weight_decay=0.3, seed=2
+[2026-04-26 02:18:40]     DONE in 575s. t_grok=4100, final_test_acc=0.9998
+[2026-04-26 02:18:40] --- Run 15/17: wd3.0_s0 (group=wd_sweep) ---
+[2026-04-26 02:18:40]     weight_decay=3.0, seed=0
+[2026-04-26 02:28:08]     DONE in 569s. t_grok=400, final_test_acc=1.0000
+[2026-04-26 02:28:08] --- Run 16/17: wd3.0_s1 (group=wd_sweep) ---
+[2026-04-26 02:28:08]     weight_decay=3.0, seed=1
+[2026-04-26 02:37:38]     DONE in 570s. t_grok=500, final_test_acc=0.4155
+[2026-04-26 02:37:38] --- Run 17/17: wd3.0_s2 (group=wd_sweep) ---
+[2026-04-26 02:37:38]     weight_decay=3.0, seed=2
+[2026-04-26 02:47:16]     DONE in 578s. t_grok=500, final_test_acc=1.0000
+[2026-04-26 02:47:16] ============================================================
+[2026-04-26 02:47:16] PHASE 5 RUNS COMPLETE
+[2026-04-26 02:47:16] ============================================================

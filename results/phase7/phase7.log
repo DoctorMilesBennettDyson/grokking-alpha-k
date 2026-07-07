@@ -1,0 +1,137 @@
+[2026-04-27 21:47:59] ============================================================
+[2026-04-27 21:47:59] PHASE 7 (FASE I) START
+[2026-04-27 21:47:59]   total runs: 63  |  done: 0  |  pending: 63
+[2026-04-27 21:47:59]   estimated time remaining: 21.8 hours
+[2026-04-27 21:47:59] ============================================================
+[2026-04-27 21:47:59] Device: cuda
+[2026-04-27 21:47:59] --- [1/63] p31_wd0.01_s10  group=A_close_weak  steps=300000  wd=0.01 ---
+[2026-04-27 22:17:19]     done 1760s | t_grok=None | sustained=None | acc=0.4823
+[2026-04-27 22:17:19] --- [2/63] p31_wd0.01_s11  group=A_close_weak  steps=300000  wd=0.01 ---
+[2026-04-27 22:48:12]     done 1853s | t_grok=295100 | sustained=295100 | acc=0.9917
+[2026-04-27 22:48:12] --- [3/63] p31_wd0.01_s12  group=A_close_weak  steps=300000  wd=0.01 ---
+[2026-04-27 23:18:17]     done 1806s | t_grok=None | sustained=None | acc=0.6133
+[2026-04-27 23:18:17] --- [4/63] p31_wd0.01_s13  group=A_close_weak  steps=300000  wd=0.01 ---
+[2026-04-27 23:49:07]     done 1849s | t_grok=None | sustained=None | acc=0.5010
+[2026-04-27 23:49:07] --- [5/63] p31_wd0.01_s14  group=A_close_weak  steps=300000  wd=0.01 ---
+[2026-04-28 00:18:16]     done 1749s | t_grok=155700 | sustained=155700 | acc=0.9501
+[2026-04-28 00:18:16] --- [6/63] p31_wd0.1_s10  group=A_close_weak  steps=200000  wd=0.1 ---
+[2026-04-28 00:36:34]     done 1098s | t_grok=32900 | sustained=33100 | acc=1.0000
+[2026-04-28 00:36:34] --- [7/63] p31_wd0.1_s11  group=A_close_weak  steps=200000  wd=0.1 ---
+[2026-04-28 00:56:34]     done 1200s | t_grok=55700 | sustained=58400 | acc=0.9979
+[2026-04-28 00:56:34] --- [8/63] p31_wd0.1_s12  group=A_close_weak  steps=200000  wd=0.1 ---
+[2026-04-28 01:15:46]     done 1153s | t_grok=45800 | sustained=46900 | acc=0.9667
+[2026-04-28 01:15:46] --- [9/63] p97_wd3.0_s10  group=A_close_weak  steps=200000  wd=3.0 ---
+[2026-04-28 01:32:50]     done 1024s | t_grok=600 | sustained=600 | acc=0.9998
+[2026-04-28 01:32:50] --- [10/63] p97_wd3.0_s11  group=A_close_weak  steps=200000  wd=3.0 ---
+[2026-04-28 01:49:40]     done 1010s | t_grok=500 | sustained=500 | acc=1.0000
+[2026-04-28 01:49:40] --- [11/63] p97_wd3.0_s12  group=A_close_weak  steps=200000  wd=3.0 ---
+[2026-04-28 02:06:30]     done 1010s | t_grok=400 | sustained=400 | acc=1.0000
+[2026-04-28 02:06:30] --- [12/63] p97_wd3.0_s13  group=A_close_weak  steps=200000  wd=3.0 ---
+[2026-04-28 02:23:13]     done 1003s | t_grok=500 | sustained=500 | acc=1.0000
+[2026-04-28 02:23:13] --- [13/63] p97_wd3.0_s14  group=A_close_weak  steps=200000  wd=3.0 ---
+[2026-04-28 02:40:08]     done 1015s | t_grok=400 | sustained=400 | acc=1.0000
+[2026-04-28 02:40:08] --- [14/63] p149_wd3.0_s10  group=A_close_weak  steps=200000  wd=3.0 ---
+[2026-04-28 02:57:50]     done 1061s | t_grok=500 | sustained=500 | acc=0.9942
+[2026-04-28 02:57:50] --- [15/63] p149_wd3.0_s11  group=A_close_weak  steps=200000  wd=3.0 ---
+[2026-04-28 03:15:43]     done 1074s | t_grok=700 | sustained=700 | acc=1.0000
+[2026-04-28 03:15:43] --- [16/63] p149_wd3.0_s12  group=A_close_weak  steps=200000  wd=3.0 ---
+[2026-04-28 03:33:22]     done 1058s | t_grok=600 | sustained=15800 | acc=0.8480
+[2026-04-28 03:33:22] --- [17/63] p149_wd3.0_s13  group=A_close_weak  steps=200000  wd=3.0 ---
+[2026-04-28 03:51:04]     done 1063s | t_grok=600 | sustained=600 | acc=0.9865
+[2026-04-28 03:51:04] --- [18/63] p149_wd3.0_s14  group=A_close_weak  steps=200000  wd=3.0 ---
+[2026-04-28 04:08:44]     done 1060s | t_grok=600 | sustained=600 | acc=1.0000
+[2026-04-28 04:08:44] --- [19/63] p53_wd0.01_s0  group=B_intermediate  steps=200000  wd=0.01 ---
+[2026-04-28 04:25:17]     done 993s | t_grok=146700 | sustained=146700 | acc=0.9979
+[2026-04-28 04:25:17] --- [20/63] p53_wd0.01_s1  group=B_intermediate  steps=200000  wd=0.01 ---
+[2026-04-28 04:41:43]     done 986s | t_grok=None | sustained=None | acc=0.8954
+[2026-04-28 04:41:43] --- [21/63] p53_wd0.01_s2  group=B_intermediate  steps=200000  wd=0.01 ---
+[2026-04-28 04:58:10]     done 986s | t_grok=154700 | sustained=160700 | acc=0.9730
+[2026-04-28 04:58:10] --- [22/63] p53_wd0.1_s0  group=B_intermediate  steps=200000  wd=0.1 ---
+[2026-04-28 05:14:29]     done 980s | t_grok=31900 | sustained=31900 | acc=1.0000
+[2026-04-28 05:14:29] --- [23/63] p53_wd0.1_s1  group=B_intermediate  steps=200000  wd=0.1 ---
+[2026-04-28 05:30:57]     done 988s | t_grok=31200 | sustained=31200 | acc=0.9680
+[2026-04-28 05:30:57] --- [24/63] p53_wd0.1_s2  group=B_intermediate  steps=200000  wd=0.1 ---
+[2026-04-28 05:47:47]     done 1010s | t_grok=35200 | sustained=35200 | acc=1.0000
+[2026-04-28 05:47:47] --- [25/63] p53_wd0.3_s0  group=B_intermediate  steps=200000  wd=0.3 ---
+[2026-04-28 06:04:26]     done 999s | t_grok=8900 | sustained=8900 | acc=1.0000
+[2026-04-28 06:04:26] --- [26/63] p53_wd0.3_s1  group=B_intermediate  steps=200000  wd=0.3 ---
+[2026-04-28 06:21:04]     done 998s | t_grok=8800 | sustained=8800 | acc=1.0000
+[2026-04-28 06:21:04] --- [27/63] p53_wd0.3_s2  group=B_intermediate  steps=200000  wd=0.3 ---
+[2026-04-28 06:37:34]     done 990s | t_grok=10600 | sustained=10600 | acc=1.0000
+[2026-04-28 06:37:34] --- [28/63] p53_wd1.0_s0  group=B_intermediate  steps=200000  wd=1.0 ---
+[2026-04-28 06:54:02]     done 989s | t_grok=2600 | sustained=2600 | acc=1.0000
+[2026-04-28 06:54:02] --- [29/63] p53_wd1.0_s1  group=B_intermediate  steps=200000  wd=1.0 ---
+[2026-04-28 07:10:30]     done 988s | t_grok=2500 | sustained=2500 | acc=0.9993
+[2026-04-28 07:10:30] --- [30/63] p53_wd1.0_s2  group=B_intermediate  steps=200000  wd=1.0 ---
+[2026-04-28 07:27:02]     done 992s | t_grok=2600 | sustained=2600 | acc=1.0000
+[2026-04-28 07:27:02] --- [31/63] p53_wd3.0_s0  group=B_intermediate  steps=200000  wd=3.0 ---
+[2026-04-28 07:43:36]     done 995s | t_grok=1300 | sustained=1300 | acc=0.9957
+[2026-04-28 07:43:36] --- [32/63] p53_wd3.0_s1  group=B_intermediate  steps=200000  wd=3.0 ---
+[2026-04-28 08:00:07]     done 991s | t_grok=1100 | sustained=1100 | acc=0.8342
+[2026-04-28 08:00:07] --- [33/63] p53_wd3.0_s2  group=B_intermediate  steps=200000  wd=3.0 ---
+[2026-04-28 08:16:36]     done 989s | t_grok=1100 | sustained=1400 | acc=1.0000
+[2026-04-28 08:16:36] --- [34/63] p67_wd0.01_s0  group=B_intermediate  steps=200000  wd=0.01 ---
+[2026-04-28 08:33:14]     done 997s | t_grok=89100 | sustained=90000 | acc=1.0000
+[2026-04-28 08:33:14] --- [35/63] p67_wd0.01_s1  group=B_intermediate  steps=200000  wd=0.01 ---
+[2026-04-28 08:49:59]     done 1006s | t_grok=78200 | sustained=78200 | acc=0.9902
+[2026-04-28 08:49:59] --- [36/63] p67_wd0.01_s2  group=B_intermediate  steps=200000  wd=0.01 ---
+[2026-04-28 09:06:28]     done 988s | t_grok=105700 | sustained=105700 | acc=0.9813
+[2026-04-28 09:06:28] --- [37/63] p67_wd0.1_s0  group=B_intermediate  steps=200000  wd=0.1 ---
+[2026-04-28 09:22:57]     done 990s | t_grok=23700 | sustained=23700 | acc=1.0000
+[2026-04-28 09:22:57] --- [38/63] p67_wd0.1_s1  group=B_intermediate  steps=200000  wd=0.1 ---
+[2026-04-28 09:39:24]     done 987s | t_grok=22100 | sustained=22100 | acc=1.0000
+[2026-04-28 09:39:24] --- [39/63] p67_wd0.1_s2  group=B_intermediate  steps=200000  wd=0.1 ---
+[2026-04-28 09:55:50]     done 986s | t_grok=23900 | sustained=23900 | acc=1.0000
+[2026-04-28 09:55:50] --- [40/63] p67_wd0.3_s0  group=B_intermediate  steps=200000  wd=0.3 ---
+[2026-04-28 10:12:26]     done 997s | t_grok=7000 | sustained=7000 | acc=1.0000
+[2026-04-28 10:12:26] --- [41/63] p67_wd0.3_s1  group=B_intermediate  steps=200000  wd=0.3 ---
+[2026-04-28 10:28:51]     done 984s | t_grok=6400 | sustained=6400 | acc=1.0000
+[2026-04-28 10:28:51] --- [42/63] p67_wd0.3_s2  group=B_intermediate  steps=200000  wd=0.3 ---
+[2026-04-28 10:45:13]     done 982s | t_grok=6800 | sustained=6800 | acc=1.0000
+[2026-04-28 10:45:13] --- [43/63] p67_wd1.0_s0  group=B_intermediate  steps=200000  wd=1.0 ---
+[2026-04-28 11:01:38]     done 986s | t_grok=2000 | sustained=2000 | acc=1.0000
+[2026-04-28 11:01:38] --- [44/63] p67_wd1.0_s1  group=B_intermediate  steps=200000  wd=1.0 ---
+[2026-04-28 11:18:03]     done 985s | t_grok=1800 | sustained=1800 | acc=1.0000
+[2026-04-28 11:18:03] --- [45/63] p67_wd1.0_s2  group=B_intermediate  steps=200000  wd=1.0 ---
+[2026-04-28 11:34:21]     done 978s | t_grok=2000 | sustained=2000 | acc=1.0000
+[2026-04-28 11:34:21] --- [46/63] p67_wd3.0_s0  group=B_intermediate  steps=200000  wd=3.0 ---
+[2026-04-28 11:50:40]     done 979s | t_grok=800 | sustained=800 | acc=0.9996
+[2026-04-28 11:50:40] --- [47/63] p67_wd3.0_s1  group=B_intermediate  steps=200000  wd=3.0 ---
+[2026-04-28 12:06:57]     done 977s | t_grok=700 | sustained=700 | acc=1.0000
+[2026-04-28 12:06:57] --- [48/63] p67_wd3.0_s2  group=B_intermediate  steps=200000  wd=3.0 ---
+[2026-04-28 12:23:16]     done 979s | t_grok=800 | sustained=800 | acc=1.0000
+[2026-04-28 12:23:16] --- [49/63] p113_wd0.01_s0  group=B_intermediate  steps=200000  wd=0.01 ---
+[2026-04-28 12:40:19]     done 1023s | t_grok=36700 | sustained=37400 | acc=0.9989
+[2026-04-28 12:40:19] --- [50/63] p113_wd0.01_s1  group=B_intermediate  steps=200000  wd=0.01 ---
+[2026-04-28 12:57:44]     done 1045s | t_grok=21700 | sustained=21700 | acc=0.9994
+[2026-04-28 12:57:44] --- [51/63] p113_wd0.01_s2  group=B_intermediate  steps=200000  wd=0.01 ---
+[2026-04-28 13:14:31]     done 1008s | t_grok=36200 | sustained=36200 | acc=0.9973
+[2026-04-28 13:14:31] --- [52/63] p113_wd0.1_s0  group=B_intermediate  steps=200000  wd=0.1 ---
+[2026-04-28 13:31:36]     done 1025s | t_grok=8000 | sustained=8000 | acc=1.0000
+[2026-04-28 13:31:36] --- [53/63] p113_wd0.1_s1  group=B_intermediate  steps=200000  wd=0.1 ---
+[2026-04-28 13:48:43]     done 1026s | t_grok=2900 | sustained=2900 | acc=0.9998
+[2026-04-28 13:48:43] --- [54/63] p113_wd0.1_s2  group=B_intermediate  steps=200000  wd=0.1 ---
+[2026-04-28 14:05:31]     done 1008s | t_grok=9500 | sustained=9500 | acc=1.0000
+[2026-04-28 14:05:31] --- [55/63] p113_wd0.3_s0  group=B_intermediate  steps=200000  wd=0.3 ---
+[2026-04-28 14:22:54]     done 1042s | t_grok=2800 | sustained=2800 | acc=1.0000
+[2026-04-28 14:22:54] --- [56/63] p113_wd0.3_s1  group=B_intermediate  steps=200000  wd=0.3 ---
+[2026-04-28 14:40:00]     done 1026s | t_grok=2500 | sustained=2500 | acc=1.0000
+[2026-04-28 14:40:00] --- [57/63] p113_wd0.3_s2  group=B_intermediate  steps=200000  wd=0.3 ---
+[2026-04-28 14:57:22]     done 1041s | t_grok=3500 | sustained=3500 | acc=1.0000
+[2026-04-28 14:57:22] --- [58/63] p113_wd1.0_s0  group=B_intermediate  steps=200000  wd=1.0 ---
+[2026-04-28 15:14:58]     done 1056s | t_grok=1100 | sustained=1100 | acc=0.9998
+[2026-04-28 15:14:58] --- [59/63] p113_wd1.0_s1  group=B_intermediate  steps=200000  wd=1.0 ---
+[2026-04-28 15:33:13]     done 1095s | t_grok=700 | sustained=700 | acc=1.0000
+[2026-04-28 15:33:13] --- [60/63] p113_wd1.0_s2  group=B_intermediate  steps=200000  wd=1.0 ---
+[2026-04-28 15:52:53]     done 1180s | t_grok=1400 | sustained=1400 | acc=1.0000
+[2026-04-28 15:52:53] --- [61/63] p113_wd3.0_s0  group=B_intermediate  steps=200000  wd=3.0 ---
+[2026-04-28 16:12:52]     done 1199s | t_grok=500 | sustained=500 | acc=0.9840
+[2026-04-28 16:12:52] --- [62/63] p113_wd3.0_s1  group=B_intermediate  steps=200000  wd=3.0 ---
+[2026-04-28 16:30:57]     done 1085s | t_grok=500 | sustained=500 | acc=0.9984
+[2026-04-28 16:30:57] --- [63/63] p113_wd3.0_s2  group=B_intermediate  steps=200000  wd=3.0 ---
+[2026-04-28 16:50:33]     done 1176s | t_grok=500 | sustained=500 | acc=0.9814
+[2026-04-28 16:50:33] ============================================================
+[2026-04-28 16:50:33] PHASE 7 (FASE I) RUNS COMPLETE
+[2026-04-28 16:50:33] ============================================================
+[2026-04-28 16:50:34] REPORT written: E:\ASIC_LLM_Project\paper_04_emergence_prediction\code\grokking\results\phase7\REPORT.md
+[2026-04-28 16:50:34] Phase 7 (Fase I) done.

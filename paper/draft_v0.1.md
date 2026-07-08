@@ -4,8 +4,8 @@
 Independent researcher — Tucumán, Argentina
 Draft v0.1 — 2026-07-07 — code and raw data: `github.com/DoctorMilesBennettDyson/grokking-alpha-k`
 
-> **Draft status:** results of the pre-registered P1/P4 experiments (Section 5.3) are
-> pending; placeholders are marked `[P9]`. Everything else is final data.
+> **Draft status:** all data final, including the pre-registered P1/P4 experiments
+> (Section 5.3): P1 confirmed, P4 refuted.
 
 ---
 
@@ -51,10 +51,14 @@ We answer empirically. Our contributions:
    dated before execution.
 3. **Two mechanistic negative results** (Sections 4.2, 4.4): SGD-momentum weight-norm
    collapse, and the failure of a gradient-SNR reading of batch-size effects.
-4. **A methods contribution** (Section 5.2): we disclose, with the forensic
+4. **A monotone weight-decay × batch-size interaction** (Section 5.3): under a public,
+   commit-timestamped pre-registration, |α| grows with batch size (0.64 → 0.73 → 0.80),
+   refuting a separable-temperature model of the effect.
+5. **A methods contribution** (Sections 5.2–5.3): we disclose, with the forensic
    reconstruction that exposed it, how a theory "pre-registration" inside our own program
-   was contaminated by data it claimed to predate — and how commit-hash-timestamped,
-   code-generated predictions prevent the failure mode.
+   was contaminated by data it claimed to predate — then re-run the confirmatory step
+   correctly (commit-hash-timestamped, code-generated predictions), reporting its 1-of-2
+   hit rate as the public commit obliges.
 
 Everything runs on one RTX 3070 (8 GB); total compute for all results is under 150 GPU-hours.
 
@@ -193,18 +197,28 @@ shows the published "predictions" sitting on the contaminated fit). We publish t
 failure because the alternative — quietly dropping the claim — is how fields accumulate
 unreproducible theory.
 
-### 5.3 Replacement predictions, registered properly `[P9]`
+### 5.3 Replacement predictions, registered properly — one passed, one failed
 Two consequences of the temperature reading were pre-registered in
 `prereg/PRE_REGISTRATION_P1_P4.md`, timestamped by public commit `320f7799`
-(2026-07-07), **before** their runs began:
+(2026-07-07), **before** their runs began (33/33 runs clean, `results/phase9/`):
 
-- **P1** — at fixed bs, t_grok decreases monotonically with lr. `[P9: pending]`
-- **P4** — α is batch-size-invariant: |α(bs=256) − α(bs=1024)| ≤ 0.15. This is the
-  separability test: temperature may shift levels but must not touch the wd exponent.
-  `[P9: pending]`
+- **P1 — CONFIRMED.** At fixed batch size, t_grok decreases monotonically with learning
+  rate (2567 → 1333 → 933 for lr 5e-4/1e-3/2e-3), the direction the temperature reading
+  T = lr/bs predicts. The magnitude at low lr exceeds the exploratory band (ratio 1.93 vs
+  predicted ≤1.55) — direction right, low-lr slowdown stronger than modeled.
+- **P4 — REFUTED, and this is the more informative outcome.** The wd exponent is *not*
+  batch-size-invariant: α = -0.636, -0.731, -0.802 at bs = 256, 512, 1024. The
+  pre-registered separation |α(256) − α(1024)| ≤ 0.15 fails at 0.166. Worse for the model,
+  better for the science: **|α| increases monotonically with batch size** — larger batches
+  make grokking time *more* sensitive to weight decay. A separable temperature prefactor
+  cannot produce this; weight decay and batch size interact.
 
-The pre-registered decision table (in the registration file) fixes the interpretation of
-all four outcomes, including full refutation.
+Per the pre-registered decision table (P1 pass + P4 fail), the separable temperature model
+is rejected and an interaction model is required (developed as eq. (11) in `theory/`); its
+own sharpest test (does α depend on lr as it does on bs?) is left for the next
+pre-registration. We report the 1-of-2 hit rate exactly as the public commit obliges. The
+value of P4 is that it was a real risk, taken publicly, that the theory lost — which is the
+only kind of test that can earn a theory credit when it wins.
 
 ## 6. Related work
 

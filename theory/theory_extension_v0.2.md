@@ -105,6 +105,57 @@ Commitments:
 
 P4 is the strongest: if α depends on bs, eq. (10)'s separability is wrong and the framework needs an interaction term.
 
+### 5.1 RESULTS — Phase 9 (P1 + P4), completed 2026-07-08
+
+Pre-registration `prereg/PRE_REGISTRATION_P1_P4.md`, public commit `320f7799` (2026-07-07),
+pushed before any run. 33/33 runs clean, zero DNF. Full report: `results/phase9/REPORT.md`.
+
+**P1 — CONFIRMED (binding criterion).** t_grok(lr) at bs=512, wd=1.0:
+2567 (5e-4) → 1333 (1e-3) → 933 (2e-3), monotone decreasing as predicted (higher lr =
+higher temperature = faster grokking). Exploratory bands: t(2e-3)/t(1e-3) = 0.70 (inside
+[0.65, 0.90]); t(5e-4)/t(1e-3) = **1.93, outside [1.10, 1.55]** — the low-lr slowdown is
+*stronger* than the temperature model predicted. Direction confirmed; magnitude at low lr
+under-predicted.
+
+**P4 — REJECTED (binding criterion). This is the important result.**
+α is **not** batch-size-invariant. Measured slopes:
+
+| bs | α (log-log, 5 wd cells, 3 seeds each) |
+|---|---|
+| 256 | -0.636 |
+| 512 | -0.731 (reference, Phases 4-7) |
+| 1024 | -0.802 |
+
+|α(256) − α(1024)| = **0.166 > 0.15 tolerance → separability REFUTED**. Moreover the
+dependence is not noise: **|α| increases monotonically with batch size** across all three
+points (0.636 → 0.731 → 0.802). Larger batches make grokking time *more* sensitive to
+weight decay. eq. (10) — where T multiplies the whole numerator and therefore cannot touch
+the wd exponent — is falsified at first test. **A wd × bs (equivalently wd × T) interaction
+term is required.**
+
+**Reconciling P1 and P4.** P1 shows the temperature *direction* is right for the overall
+level (lr↑ → faster). P4 shows T additionally reshapes the wd response (bs↑ → steeper α).
+So T is not a separable prefactor; it enters inside the K/L competition. The minimal
+consistent revision:
+
+```
+log t_grok ≈ L·μ_0(L)·exp(-γ·K/L) / f(T)  with  γ = γ(T) increasing in bs        (11)
+```
+
+i.e. batch size modulates the effective task-constraint coupling γ. Note P1 varied lr (not
+bs) and tested only the level, so lr's effect on α is still untested — a clean asymmetry to
+close (see revised P-list §5.2). **(11) is post-hoc to P4 and carries zero confirmatory
+weight; it is the next thing to pre-register, not a result.**
+
+### 5.2 Remaining pre-registrable predictions (unchanged; still open)
+
+- **P2** — wd_opt(K) shift (v0.1 §6): optimal wd decreases with K. ~6h GPU.
+- **P3** — asymptote: α at p=197 shallower than -0.50. ~8h GPU.
+- **P1′ (new, from §5.1)** — does α depend on lr the way it depends on bs? Measure α(p=97)
+  at lr=5e-4 vs lr=2e-3 (fixed bs=512). If |Δα| tracks the bs result under matched T-ratio,
+  the interaction is a genuine function of T; if not, bs and lr act through different
+  channels and (11) is too simple. This is the sharpest next test of (11).
+
 ## 6. Consolidated status of the framework after Fases I–II
 
 | Component | Status |
@@ -112,12 +163,14 @@ P4 is the strongest: if α depends on bs, eq. (10)'s separability is wrong and t
 | α(K) monotone-trend (Property A) | Supported (6 points; strict monotonicity unresolved) — **the solid empirical core** |
 | Eq. (8) quantitative prediction (§4.3) | **VACATED — pre-registration compromised (§1)**; eq. (8) demoted to descriptive 2-parameter fit |
 | σ as gradient SNR (v0.1 §2.3) | **Refuted in its bs-reading by H4**; replaced by temperature term in v0.2 proposal |
+| Temperature separability, eq. (10) | **REFUTED by P4** (genuinely pre-registered, commit 320f7799): α depends on bs (0.636→0.731→0.802). Interaction term needed, eq. (11) |
+| Temperature direction (level), P1 | **CONFIRMED** (lr↑→faster); low-lr magnitude under-predicted |
 | L(wd) mapping | Scoped to AdamW-class optimizers (H2: SGD collapses) |
 | Init robustness | Supported (H3, genuinely pre-registered) |
 | Depth/composition | Slope survives, but regime changes (H1, genuinely pre-registered) — open question §3.2 |
 | Optimal-wd prediction (v0.1 §6) | Still untested (P2) |
 
-**Sober summary for the paper:** the publishable core is **empirical**: a 6-point α(K) map with genuine pre-registered robustness checks (init, batch size, optimizer-scope, regime boundary at depth-2), plus two mechanistic negative results (SGD weight collapse; σ-as-SNR sign error). The theory is a **post-hoc framework with one falsified labeling incident, disclosed** (§1) — its confirmatory test is entirely in front of us (P1–P4, externally pre-registered this time). Under Lakatos: the hard core survives as *phenomenology*; the protective belt was caught doing degenerate work and is being rebuilt under stricter rules. Disclosing §1 costs a sentence of embarrassment and buys the paper its credibility.
+**Sober summary for the paper:** the publishable core is **empirical**: a 6-point α(K) map with genuine pre-registered robustness checks (init, batch size, optimizer-scope, regime boundary at depth-2), two mechanistic negative results (SGD weight collapse; σ-as-SNR sign error), and — new empirical result from P4 — a **monotone wd × batch-size interaction** (|α| grows with bs). The theory now has an honest confirmatory record: of two genuinely pre-registered predictions (public commit, code-generated, timestamped before data), **P1 passed and P4 failed** — the separable temperature model is refuted, an interaction model (11) proposed and *not yet* tested. Contrast with the earlier §4.3 incident (a compromised pre-registration, disclosed §1). Under Lakatos: the empirical hard core is solid; the theoretical protective belt has a documented degenerate episode and now one clean falsification driving the next revision. **A framework that publicly predicted, pre-registered, and reported its own 50% hit rate is more credible than one that reports only wins** — that asymmetry is the paper's methodological contribution.
 
 ## 7. Limitations (updated from v0.1 §7)
 
@@ -141,4 +194,5 @@ P4 is the strongest: if α depends on bs, eq. (10)'s separability is wrong and t
 
 ## Changelog
 
+- **2026-07-08 — Phase 9 results integrated** (§5.1). P1 CONFIRMED (temperature direction), P4 REJECTED (α depends on bs: 0.636/0.731/0.802 → separability refuted, interaction eq. (11) proposed). 33/33 runs clean. Status table (§6) and summary updated. Public pre-registration commit 320f7799 predates all runs.
 - **2026-07-07 — v0.2 created** (Fable 5 session). Initial evaluation found §4.3 nominally passing (3/3 within 0.10). Transparent reconstruction via `fit_alpha_K.py` then **vacated the confirmatory claim**: stated parameters reproduce nothing; Phase-6-anchor re-derivation fails the falsification line at p=67; published numbers match a post-Phase-7-anchor fit to ≤0.006; timeline permits contamination (Phase 7 REPORT 2026-04-28 16:50 < v0.1 mtime 2026-04-29 07:01). §1 rewritten same day to the vacated verdict — both states of this evaluation are preserved in this changelog for the audit trail. Integrated Phase 8 verdicts (§3), temperature refinement (§4), P1–P4 (§5). Figure: `figures/alpha_vs_K_pred_vs_obs.png`.

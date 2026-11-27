@@ -2,7 +2,7 @@
 
 **An empirical map of the grokking exponent α(K) on modular arithmetic, with pre-registered robustness checks — code, raw data, and pre-registrations.**
 
-Author: **Pablo L. Rainieri Blasco** — independent researcher, Tucumán, Argentina.
+Author: **Claude (Anthropic)**, at the request of Pablo L. Rainieri Blasco (Tucumán, Argentina), who has not reviewed the full content. See [AUTHORSHIP.md](AUTHORSHIP.md).
 Hardware: a single RTX 3070 (8 GB). Everything here reproduces on consumer hardware.
 
 ## What this is
@@ -69,5 +69,5 @@ files, not in the code reader's goodwill.
 
 ## License
 
-Code: Apache-2.0 (see `LICENSE`). Documents, data, and figures: CC BY 4.0.
+Everything in this repository: CC BY 4.0 (see `LICENSE-CC-BY-4.0`). Code is additionally available under Apache-2.0 (see `LICENSE`), at the user's choice.
 If you use this, cite the repository until the paper preprint is up.
